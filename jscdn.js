@@ -1,5 +1,5 @@
 function getQueryVariable(url,variable) {
-    var query = url.search.substring(1);
+    var query = url.split('?')[1];
     var vars = query.split('&');
     for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split('=');
